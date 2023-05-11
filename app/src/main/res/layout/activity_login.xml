@@ -1,0 +1,32 @@
+<?xml version="1.0" encoding="utf-8"?>
+<androidx.constraintlayout.widget.ConstraintLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    tools:context=".login">
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:orientation="vertical"
+        android:gravity="center">
+        <EditText
+            android:layout_width="700px"
+            android:layout_height="150px"
+            android:hint="CPF"
+            android:id="@+id/edt_cpf_frmlogin"
+            android:inputType="number"/>
+        <EditText
+            android:layout_width="700px"
+            android:layout_height="150px"
+            android:hint="Senha"
+            android:id="@+id/edt_senha_frmlogin"
+            android:layout_marginBottom="100px"
+            android:inputType="textPassword"/>
+        <Button
+            android:layout_width="350px"
+            android:layout_height="150px"
+            android:text="Login"
+            android:onClick="btn_login_frmlogin"/>
+    </LinearLayout>
+</androidx.constraintlayout.widget.ConstraintLayout>

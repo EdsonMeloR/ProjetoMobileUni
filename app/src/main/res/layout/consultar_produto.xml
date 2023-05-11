@@ -1,0 +1,63 @@
+<?xml version="1.0" encoding="utf-8"?>
+<androidx.constraintlayout.widget.ConstraintLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    tools:context=".ConsultarProdutoActivity">
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:orientation="vertical"
+        android:gravity="center">
+        <EditText
+            android:layout_width="700px"
+            android:layout_height="150px"
+            android:hint="ID"
+            android:id="@+id/edt_id_frmconsprod"
+            android:inputType="number"/>
+        <EditText
+            android:layout_width="700px"
+            android:layout_height="150px"
+            android:hint="Nome"
+            android:id="@+id/edt_nome_frmconsprod"
+            android:enabled="false"/>
+        <EditText
+            android:layout_width="700px"
+            android:layout_height="150px"
+            android:hint="Quantidade"
+            android:id="@+id/edt_quantidade_frmconsprod"
+            android:enabled="false"/>
+        <EditText
+            android:layout_width="700px"
+            android:layout_height="150px"
+            android:hint="Valor"
+            android:id="@+id/edt_valor_frmconsprod"
+            android:enabled="false"
+            android:inputType="numberDecimal"/>
+        <EditText
+            android:layout_width="700px"
+            android:layout_height="150px"
+            android:hint="Fabricante"
+            android:id="@+id/edt_fabricante_frmconsprod"
+            android:enabled="false"/>
+        <EditText
+            android:layout_width="700px"
+            android:layout_height="150px"
+            android:hint="Cod. Barras"
+            android:id="@+id/edt_codbarras_frmconsprod"
+            android:enabled="false"/>
+
+        <Button
+            android:layout_width="600px"
+            android:layout_height="150px"
+            android:text="Consultar"
+            android:onClick="btn_consultar_frmconsprod"/>
+
+        <Button
+            android:layout_width="600px"
+            android:layout_height="150px"
+            android:text="Atualizar"
+            android:onClick="btn_update_frmconsprod"/>
+    </LinearLayout>
+</androidx.constraintlayout.widget.ConstraintLayout>
